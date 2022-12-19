@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoFixture.AutoMoq" Version="4.17.0" />
+    <PackageReference Include="AutoFixture.Xunit2" Version="4.17.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.11.0" />
+    <PackageReference Include="MockQueryable.Moq" Version="6.0.1" />
+    <PackageReference Include="Moq" Version="4.18.1" />
+    <PackageReference Include="xunit" Version="2.4.1" />
+
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Insurance.Application\Insurance.Application.csproj" />
+    <ProjectReference Include="..\Insurance.Infrastructure\Insurance.Infrastructure.csproj" />
+    <ProjectReference Include="..\Insurance.UnitTests.Core\Insurance.UnitTests.Core.csproj" />
+  </ItemGroup>
+  
+</Project>
